@@ -1,0 +1,46 @@
+.movieCover {
+  height: 80vh;
+  margin-top: 40px; 
+  @include flex(row, space-between, center); 
+  color: $apache-color; 
+}
+
+.movieCover__title {
+  height: 100%;
+  @include flex(column, space-between, none); 
+  position: relative;
+
+  p {
+    font-size: 4rem; 
+  }
+
+  .movieCover__time, .movieCover__date {
+    position: absolute; 
+    font-size: 2rem; 
+    left: 110%;
+  }
+
+  .movieCover__time {
+    top: 5px; 
+  }
+
+  .movieCover__date {
+    bottom: 5px;
+  }
+}
+
+.movieCover__type {
+  color: black; 
+  height: 80%;
+  font-size: 1.2rem; 
+  @include flex(column, space-between, none); 
+}
+
+.movieCover__img {
+  width: 80%; 
+  height: 100%; 
+  background-image: url('../assets/imgs/apacheCover.jpg'); 
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}

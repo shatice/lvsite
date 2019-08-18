@@ -40,7 +40,7 @@ const movies = [desiderare, apache, raptus, piscine, chienne];
 let markup, 
 		main = document.querySelector('main');
 
-if (main.className = '.homeSection') {
+if (main.className = 'homeSection') {
 	movies.forEach(movie => {
 		markup = `
 			<article class="movie movie--${movie.modifier}">
@@ -63,6 +63,7 @@ moviesItems.forEach( moviesItem => {
 		window.location.href = '/movies.html'; 
 	})
 });
+
 /********** Home -- Burger menu **********/
 
 const menu = document.querySelector('.menu'), 

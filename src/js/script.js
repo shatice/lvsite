@@ -1,4 +1,5 @@
 console.log('The fish knows');
+
 let pathName = window.location.pathname; 
 
 /********** Home -- Generate movies articles **********/
@@ -60,7 +61,7 @@ const moviesItems = document.querySelectorAll('.movieTitle p'),
 
 moviesItems.forEach( moviesItem => {
 	moviesItem.addEventListener('click', function() {
-		window.location.href = '/movies.html'; 
+		window.location.replace('/movies.html'); 
 	})
 });
 

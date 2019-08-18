@@ -1,3 +1,12 @@
+@keyframes appear {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 body {
 	background-image: url('../assets/imgs/bg.jpg'); 
 	background-attachment: fixed; 
@@ -20,17 +29,19 @@ header {
 		font-size: 1.5rem; 
 	}
 
-	ul {
+	.nav {
 		display: none; 
+		transition: all 0.5s; 
 	}
 
-	li {
+	.navItem {
 		display: none; 
 		font-size: 2rem; 
 		line-height: 1.5; 
-		color: transparent;
-		-webkit-background-clip: text;
-		background-image: url('../assets/imgs/bg.jpg');
+		color: rgb(255, 243, 221); 
+		// color: transparent;
+		// -webkit-background-clip: text;
+		// background-image: url('../assets/imgs/bg.jpg');
 	}
 
 	.menu {
@@ -41,6 +52,7 @@ header {
 		top: 25px; 
 		right: 5px; 
 		z-index: 2; 
+		transition: all 0.5s; 
 
 		&::before, &::after {
 			content: "";             
@@ -48,6 +60,7 @@ header {
 			background: $fav-color; 
 			height: 3px;
 			right: 0; 
+			transition: all 0.5s;
 		}
 
 		&::before {
@@ -62,15 +75,18 @@ header {
 	}
 
 	.menu.is-clicked {
-		background-image: url('../assets/imgs/bg.jpg');
+		background: rgb(255, 243, 221); 
+		// background-image: url('../assets/imgs/bg.jpg');
 
 		&::before, &::after {
-			background-image: url('../assets/imgs/bg.jpg');
+			background: rgb(255, 243, 221); 
+			// background-image: url('../assets/imgs/bg.jpg');
 		}
 	}
 
-	ul.is-clicked {
+	.nav.is-clicked {
 		display: block; 
+		animation: appear 0.2s linear forwards; 
 		@include flex(column, center, center); 
 		background: rgba(195, 58, 40, 0.397); 
 		width: 100vw; 
@@ -79,7 +95,7 @@ header {
 		top: 0; 
 		left: 0;
 
-		li {
+		.navItem {
 			display: block; 
 		}
 	}
@@ -113,13 +129,14 @@ header {
 }
 
 .movieTitle {
-	// position: -webkit-sticky;
-	// position: sticky;
-	// top: 20px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 20px;
 	font-size: 3rem; 
-	color: transparent;
-	-webkit-background-clip: text;
-	background-image: url('../assets/imgs/bg.jpg');
+	color: rgb(255, 243, 221); 
+	// color: transparent;
+	// -webkit-background-clip: text;
+	// background-image: url('../assets/imgs/bg.jpg');
 }
 
 .movieTitle.is-clicked {
@@ -134,4 +151,3 @@ footer {
 	padding: 20px; 
 	text-align: center; 
 }
-

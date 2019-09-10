@@ -1,0 +1,117 @@
+.movieCover {
+  height: 80vh;
+  margin: 40px 0; 
+  @include flex(row, space-between, center); 
+  color: $apache-color; 
+}
+
+.movieCover__title {
+  height: 100%;
+  @include flex(column, space-between, none); 
+  position: relative;
+
+  p {
+    font-size: 4rem; 
+  }
+
+  .movieCover__time, .movieCover__date {
+    position: absolute; 
+    font-size: 2rem; 
+    left: 110%;
+  }
+
+  .movieCover__time {
+    top: 5px; 
+  }
+
+  .movieCover__date {
+    bottom: 5px;
+  }
+}
+
+.movieCover__title--desiderare, 
+.movieCover__title--piscine {
+  color: $desiderare-color;
+  
+  p {
+    padding-right: 15px; 
+  }
+
+  div {
+    font-size: 3rem; 
+  }
+
+  .movieCover__time, .movieCover__date {
+    left: 270%;
+  }
+
+  .movieCover__date {
+    bottom: -20px;
+  }
+}
+
+.movieCover__title--apache {
+  color: $apache-color;
+}
+
+.movieCover__title--raptus {
+  color: $raptus-color;
+}
+
+.movieCover__title--piscine {
+  color: $piscine-color;
+}
+
+.movieCover__title--chienne {
+  color: $chienne-color;
+}
+
+.extra {
+  position: absolute;
+  height: 100%;
+  left: 30px;
+  @include flex(column, space-between, none);  
+}
+
+.movieCover__type {
+  color: $third-color; 
+  height: 80%;
+  font-size: 1.2rem; 
+  @include flex(column, space-between, none); 
+}
+
+.movieCover__type--desiderare, 
+.movieCover__type--piscine {
+  margin-left: 30px; 
+  margin-top: 20px; 
+}
+
+.movieCover__img {
+  width: 80%; 
+  height: 100%; 
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}
+
+.movieCover__img--desiderare {
+  background-image: url('../assets/imgs/apacheCover.jpg'); 
+  width: 70%; 
+}
+
+.movieCover__img--apache {
+  background-image: url('../assets/imgs/apacheCover.jpg');
+}
+
+.movieCover__img--raptus {
+  background-image: url('../assets/imgs/raptusCover.jpg');
+}
+
+.movieCover__img--piscine {
+  background-image: url('../assets/imgs/piscineCover.jpg');
+  width: 70%; 
+}
+
+.movieCover__img--chienne {
+  background-image: url('../assets/imgs/chienneCover.jpg');
+}

@@ -1,0 +1,92 @@
+header {
+	color: $fav-color; 
+	@include flex(row, space-between, center); 
+	padding: 20px 5px 0px 5px;
+
+	h1 {
+		font-size: 1.5rem; 
+	}
+
+	.nav {
+		display: none; 
+		transition: all 0.5s; 
+	}
+
+	.navItem {
+		display: none; 
+		font-size: 2rem; 
+		line-height: 1.5; 
+		color: $sec-color; 
+		// color: transparent;
+		// -webkit-background-clip: text;
+		// background-image: url('../assets/imgs/bg.jpg');
+	}
+
+	.menu {
+		width: 25px; 
+		height: 3px;
+		background: $fav-color; 
+		position: fixed;
+		top: 25px; 
+		right: 5px; 
+		z-index: 2; 
+		transition: all 0.5s; 
+
+		&::before, &::after {
+			content: "";             
+			position: absolute; 
+			background: $fav-color; 
+			height: 3px;
+			right: 0; 
+			transition: all 0.5s;
+		}
+
+		&::before {
+			width: 35px; 
+			top: -10px; 
+		}
+
+		&::after {
+			width: 15px; 
+			top: 10px; 
+		}
+	}
+
+	.menu.is-clicked {
+		background: $sec-color; 
+		// background-image: url('../assets/imgs/bg.jpg');
+
+		&::before, &::after {
+			background: $sec-color; 
+			// background-image: url('../assets/imgs/bg.jpg');
+		}
+	}
+
+	.nav.is-clicked {
+		display: block; 
+		animation: appear 0.2s linear forwards; 
+		@include flex(column, center, center); 
+		background: rgba(195, 58, 40, 0.397); 
+		width: 100vw; 
+		height: 100vh;
+		position: fixed;
+		top: 0; 
+		left: 0;
+
+		.navItem {
+			display: block; 
+		}
+	}
+}
+
+.header--movies {
+	color: $third-color; 
+
+	.menu {
+		background: $third-color; 
+		
+		&::before, &::after {
+			background: $third-color; 
+		}
+	}
+}

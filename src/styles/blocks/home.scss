@@ -1,0 +1,39 @@
+.movie {
+	width: 100vw;
+	height: 80vh;
+	margin-top: 20px; 
+	background-size: cover;
+	background-position: center;  
+	@include flex(column, center, center);
+}
+
+.movie--desiderare {
+	background-image: url('../assets/imgs/desiderare.png'); 
+}
+.movie--apache {
+	background-image: url('../assets/imgs/apache.png'); 
+}
+.movie--raptus {
+	background-image: url('../assets/imgs/raptus.png'); 
+}
+.movie--piscine {
+	background-image: url('../assets/imgs/piscine.jpg'); 
+}
+.movie--chienne {
+	background-image: url('../assets/imgs/chienne.jpg'); 
+}
+
+.movieTitle {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 20px;
+	font-size: 3rem; 
+	color: $sec-color;  
+	// color: transparent;
+	// -webkit-background-clip: text;
+	// background-image: url('../assets/imgs/bg.jpg');
+}
+
+.movieTitle.is-clicked {
+	display: none; 
+}

@@ -1,102 +1,134 @@
 .movieCover {
+  width: 100%; 
   height: 80vh;
-  margin: 40px 0; 
-  @include flex(row, space-between, center); 
-  color: $apache-color; 
+  @include flex(row, space-between, none);
+  margin: 40px auto; 
+
+  @include tall {
+    width: 60%; 
+    margin: 80px auto; 
+  }
+}
+
+.movieCover__infos {
+  height: 100%;
+  display: flex;
+
+  p {
+    padding: 0 2px; 
+  }
 }
 
 .movieCover__title {
   height: 100%;
-  @include flex(column, space-between, none); 
-  position: relative;
-
-  p {
-    font-size: 4rem; 
-  }
-
-  .movieCover__time, .movieCover__date {
-    position: absolute; 
-    font-size: 2rem; 
-    left: 110%;
-  }
-
-  .movieCover__time {
-    top: 5px; 
-  }
-
-  .movieCover__date {
-    bottom: 5px;
-  }
-}
-
-.movieCover__title--desiderare, 
-.movieCover__title--piscine {
-  color: $desiderare-color;
-  
-  p {
-    padding-right: 15px; 
-  }
 
   div {
-    font-size: 3rem; 
+    height: 100%;
+    @include flex(column, space-between, none);
   }
 
-  .movieCover__time, .movieCover__date {
-    left: 270%;
+  p {
+    text-align: center; 
+    font-size: 3.9rem; 
   }
 
-  .movieCover__date {
-    bottom: -20px;
+  @include tall {
+    p {
+      font-size: 5rem; 
+    }
   }
 }
 
-.movieCover__title--apache {
-  color: $apache-color;
-}
-
-.movieCover__title--raptus {
-  color: $raptus-color;
-}
-
-.movieCover__title--piscine {
-  color: $piscine-color;
-}
-
-.movieCover__title--chienne {
-  color: $chienne-color;
-}
-
-.extra {
-  position: absolute;
+.movieCover__description {
   height: 100%;
-  left: 30px;
-  @include flex(column, space-between, none);  
+  @include flex(column, space-between, center);
 }
 
 .movieCover__type {
-  color: $third-color; 
-  height: 80%;
-  font-size: 1.2rem; 
-  @include flex(column, space-between, none); 
+  font-size: 1.5rem; 
 }
 
-.movieCover__type--desiderare, 
-.movieCover__type--piscine {
-  margin-left: 30px; 
-  margin-top: 20px; 
+.movieCover__time, 
+.movieCover__date {
+  font-size: 1.8rem;    
+}
+
+.movieCover__prom {
+  display: none; 
 }
 
 .movieCover__img {
-  width: 80%; 
-  height: 100%; 
+  width: 70%; 
   background-size: contain; 
   background-position: center; 
   background-repeat: no-repeat; 
 }
 
+/*********** MODIFIERS **********/
+
+.movieCover__infos--desiderare {
+
+  .movieCover__title, 
+  .movieCover__time,
+  .movieCover__date {
+    color: $desiderare-color;
+  }
+}
+
+.movieCover__infos--apache {
+
+  .movieCover__title, 
+  .movieCover__time,
+  .movieCover__date {
+    color: $apache-color;
+  }
+}
+
+.movieCover__infos--raptus {
+
+  .movieCover__title, 
+  .movieCover__time,
+  .movieCover__date {
+    color: $raptus-color;
+  }
+}
+
+.movieCover__infos--piscine {
+
+  .movieCover__title, 
+  .movieCover__time,
+  .movieCover__date {
+    color: $piscine-color;
+  }
+}
+
+.movieCover__infos--chienne {
+
+  .movieCover__title, 
+  .movieCover__time,
+  .movieCover__date {
+    color: $chienne-color;
+  }
+}
+
+.movieCover__title--extra {
+  display: flex; 
+
+  div:first-child {
+    @include flex(column, flex-start, none);
+  }
+  
+  div:nth-child(2) {
+    @include flex(column, flex-end, none);
+  }
+
+  p {
+    font-size: 2.5rem; 
+  }
+}
+
 .movieCover__img--desiderare {
-  background-image: url('../assets/imgs/apacheCover.jpg'); 
-  width: 70%; 
+  background-image: url('../assets/imgs/desiderareCover.jpg'); 
 }
 
 .movieCover__img--apache {
@@ -109,7 +141,6 @@
 
 .movieCover__img--piscine {
   background-image: url('../assets/imgs/piscineCover.jpg');
-  width: 70%; 
 }
 
 .movieCover__img--chienne {

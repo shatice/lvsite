@@ -1,0 +1,40 @@
+// RAJDHANI
+
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('/assets/fonts/rajdhani-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/rajdhani-bold-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('/assets/fonts/rajdhani-light-webfont.woff2') format('woff2'),
+         url('/assets/fonts/rajdhani-light-webfont.woff') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('/assets/fonts/rajdhani-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/rajdhani-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rajdhani';
+    src: url('/assets/fonts/rajdhani-semibold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/rajdhani-semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// BEBAS
+
+@font-face {
+    font-family: 'Bebas';
+    src: url('/assets/fonts/bebaskai-webfont.woff2') format('woff2'),
+         url('/assets/fonts/bebaskai-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -24,13 +24,10 @@
 	top: 20px;
 	font-size: 3rem; 
 	color: $sec-color; 
+	transition: all 0.5s; 
 
 	@include medium {
-		color: transparent;
-		-webkit-background-clip: text;
-		background-repeat: no-repeat; 
-		background-size: cover; 
-		background-position: center; 
+		@include textClip;	
 		font-size: 6rem; 
 	}
 
@@ -115,5 +112,9 @@
 
 .movieTitle.is-clicked {
 	display: none; 
+}
+
+.movieTitle.is-changed {
+	background-image: url('/assets/imgs/bg_small.jpg'); 
 }
 

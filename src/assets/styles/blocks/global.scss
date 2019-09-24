@@ -11,6 +11,7 @@ body {
 	background-image: url('/assets/imgs/bg_small.jpg'); 
 	background-attachment: fixed; 
 	font-family: 'Bebas', sans-serif;
+	transition: all 0.5s; 
 
 	@include medium {
 		background-image: url('/assets/imgs/bg_medium.jpg'); 
@@ -20,4 +21,8 @@ body {
 		background-image: url('/assets/imgs/bg_tall.jpg'); 
 		background-size: cover; 
   }
+}
+
+body.is-changed {
+	background-image: url('/assets/gifs/apache.gif'); 
 }

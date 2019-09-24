@@ -3,6 +3,7 @@ footer {
 	font-size: 0.8rem; 
 	padding: 20px; 
 	text-align: center; 
+	transition: all 0.5s; 
 
 	@include medium {
 		color: $third-color; 
@@ -11,4 +12,9 @@ footer {
 
 .footer--movies {
 	color: $third-color; 
+}
+
+footer.is-changed {
+	@include textClip;	
+	background-image: url('/assets/imgs/bg_small.jpg'); 
 }

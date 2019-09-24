@@ -2,6 +2,7 @@ header {
 	color: $fav-color; 
 	@include flex(row, space-between, center); 
 	padding: 20px 5px 0px 5px;
+	transition: all 0.5s; 
 
 	@include medium {
 		padding: 20px 15px 0px 15px;
@@ -135,11 +136,25 @@ header {
 		}
 	}	
 
+	.navItem:first-child {
+		@include medium {
+			display: none; 
+		}
+	}
+
 	.menu {
 		background: $third-color; 
 		
 		&::before, &::after {
 			background: $third-color; 
 		}
+	}
+}
+
+header.is-changed {
+	h1,
+	.navItem {
+		@include textClip;	
+		background-image: url('/assets/imgs/bg_small.jpg'); 
 	}
 }

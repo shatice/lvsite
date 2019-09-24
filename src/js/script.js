@@ -105,3 +105,21 @@ menu.addEventListener('click', function() {
 		movieTitle.classList.toggle('is-clicked');
 	});
 }); 
+
+function toggleBg() {
+	document.querySelector('body').classList.toggle('is-changed');
+	document.querySelector('header').classList.toggle('is-changed');
+	document.querySelector('footer').classList.toggle('is-changed');
+	movieTitles.forEach(movieTitle => {
+		movieTitle.classList.toggle('is-changed');
+	});
+}
+
+movieTitles.forEach(movieTitle => {
+	movieTitle.addEventListener('mouseover', function() {
+		toggleBg();
+	})
+	movieTitle.addEventListener('mouseout', function() {
+		toggleBg();
+	})
+});

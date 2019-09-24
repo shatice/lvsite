@@ -16,3 +16,11 @@
 	justify-content: $justify;
 	align-items: $align; 
 }
+
+@mixin textClip {
+	color: transparent;
+	-webkit-background-clip: text;
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+}

@@ -8,59 +8,30 @@
 }
 
 .movie--desiderare {
-	background-image: url('/assets/imgs/desiderare_small.jpg'); 
-
-	@include medium {
-		background-image: url('/assets/imgs/desiderare_medium.jpg'); 
-  }
-
-  @include tall {
-		background-image: url('/assets/imgs/desiderare_tall.jpg'); 
-  }
+	background-image: url('/assets/imgs/desiderare_medium.jpg'); 
 }
 .movie--apache {
-	background-image: url('/assets/imgs/apache_small.jpg'); 
-
-	@include medium {
-		background-image: url('/assets/imgs/apache_medium.jpg'); 
-  }
-
-  @include tall {
-		background-image: url('/assets/imgs/apache_tall.jpg'); 
-  }
+	background-image: url('/assets/imgs/apache_medium.jpg'); 
 }
 .movie--raptus {
-	background-image: url('/assets/imgs/raptus_small.jpg'); 
-
-	@include medium {
-		background-image: url('/assets/imgs/raptus_medium.jpg'); 
-  }
-
-  @include tall {
-		background-image: url('/assets/imgs/raptus_tall.jpg'); 
-  }
+	background-image: url('/assets/imgs/raptus_medium.jpg'); 
 }
 .movie--piscine {
-	background-image: url('/assets/imgs/piscine_small.jpg'); 
-
-	@include medium {
-		background-image: url('/assets/imgs/piscine_medium.jpg'); 
-  }
-
-  @include tall {
-		background-image: url('/assets/imgs/piscine_tall.jpg'); 
-  }
+	background-image: url('/assets/imgs/piscine_medium.jpg'); 
 }
 .movie--chienne {
-	background-image: url('/assets/imgs/chienne_small.jpg'); 
+	background-image: url('/assets/imgs/chienne_medium.jpg'); 
+}
+
+.movie--desiderare,
+.movie--apache,
+.movie--raptus,
+.movie--piscine,
+.movie--chienne {
 
 	@include medium {
-		background-image: url('/assets/imgs/chienne_medium.jpg'); 
-  }
-
-  @include tall {
-		background-image: url('/assets/imgs/chienne_tall.jpg'); 
-  }
+		background-image: none; 
+	}
 }
 
 .movieTitle {
@@ -69,9 +40,20 @@
 	top: 20px;
 	font-size: 3rem; 
 	color: $sec-color;  
-	// color: transparent;
-	// -webkit-background-clip: text;
-	// background-image: url('../assets/imgs/bg.jpg');
+
+	@include medium {
+		color: transparent;
+		-webkit-background-clip: text;
+		background-image: url('/assets/imgs/raptus_small.jpg');
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		background-position: center; 
+		font-size: 6rem; 
+	}
+
+	@include tall {
+		font-size: 12rem; 
+	}
 }
 
 .movieTitle.is-clicked {

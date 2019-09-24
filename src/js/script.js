@@ -84,16 +84,16 @@ const header = document.querySelector('header'),
 
 /********** Burger menu **********/
 
-const tab = {
-	'accueil' : 'Accueil', 
-	'press' : 'Press', 
-	'contact' : 'Contact'
-}; 
+// const tab = {
+// 	'accueil' : 'Accueil', 
+// 	'press' : 'Press', 
+// 	'contact' : 'Contact'
+// }; 
 
-for (var key in tab) {
-	console.log(Object.keys(tab));
-	nav.innerHTML += `<li class="navItem">${tab[key]}</li>`;
-}
+// for (var key in tab) {
+// 	console.log(Object.keys(tab));
+// 	nav.innerHTML += `<li class="navItem">${tab[key]}</li>`;
+// }
 
 const menu = document.querySelector('.menu'), 
 			closeMenu = document.querySelector('.closeMenu'); 

@@ -3,6 +3,10 @@ header {
 	@include flex(row, space-between, center); 
 	padding: 20px 5px 0px 5px;
 
+	@include tall {
+		padding: 20px 15px 0px 15px;
+	}
+
 	h1 {
 		font-size: 1.5rem; 
 	}
@@ -10,6 +14,11 @@ header {
 	.nav {
 		display: none; 
 		transition: all 0.5s; 
+
+		@include tall {
+			display: block; 
+			@include flex(row, space-between, none); 
+		}
 	}
 
 	.navItem {
@@ -20,6 +29,13 @@ header {
 		// color: transparent;
 		// -webkit-background-clip: text;
 		// background-image: url('../assets/imgs/bg.jpg');
+
+		@include tall {
+			display: block; 
+			font-size: 1.2rem; 
+			color: $fav-color; 
+			padding-left: 20px; 
+		}
 	}
 
 	.menu {
@@ -32,13 +48,22 @@ header {
 		z-index: 2; 
 		transition: all 0.5s; 
 
-		&::before, &::after {
+		@include tall {
+			display: none; 
+		}
+
+		&::before, 
+		&::after {
 			content: "";             
 			position: absolute; 
 			background: $fav-color; 
 			height: 3px;
 			right: 0; 
 			transition: all 0.5s;
+
+			@include tall {
+				display: none; 
+			}
 		}
 
 		&::before {

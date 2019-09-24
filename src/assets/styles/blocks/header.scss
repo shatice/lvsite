@@ -3,14 +3,12 @@ header {
 	@include flex(row, space-between, center); 
 	padding: 20px 5px 0px 5px;
 
+	@include tall {
+		padding: 20px 15px 0px 15px;
+	}
+
 	h1 {
 		font-size: 1.5rem; 
-
-		@include tall {
-			position: fixed;
-			top: 20px; 
-			left: 15px; 
-		}
 	}
 
 	.nav {
@@ -20,9 +18,6 @@ header {
 		@include tall {
 			display: block; 
 			@include flex(row, space-between, none); 
-			position: fixed; 
-			top: 20px; 
-			right: 15px; 
 		}
 	}
 
@@ -38,8 +33,8 @@ header {
 		@include tall {
 			display: block; 
 			font-size: 1.2rem;
-			color: $third-color;  
 			padding-left: 20px; 
+			color: $fav-color; 
 		}
 	}
 
@@ -111,6 +106,31 @@ header {
 
 .header--movies {
 	color: $third-color; 
+
+	h1 {
+
+		@include tall {
+			position: fixed;
+			top: 20px; 
+			left: 15px; 
+		}
+	}
+
+	.nav {
+
+		@include tall {
+			position: fixed; 
+			top: 20px; 
+			right: 15px; 
+		}
+	}
+
+	.navItem {
+
+		@include tall {
+			color: $third-color; 
+		}
+	}	
 
 	.menu {
 		background: $third-color; 

@@ -155,23 +155,63 @@
 }
 
 .movieCover__img--desiderare {
-  background-image: url('/assets/imgs/desiderareCover.jpg'); 
+  background-image: url('/assets/imgs/desiderareCover_small.jpg'); 
+
+  @include medium {
+    background-image: url('/assets/imgs/desiderareCover_medium.jpg'); 
+  }
+
+  @include tall {
+    background-image: url('/assets/imgs/desiderareCover_tall.jpg'); 
+  }
 }
 
 .movieCover__img--apache {
-  background-image: url('/assets/imgs/apacheCover.jpg');
+  background-image: url('/assets/imgs/apacheCover_small.jpg');
+
+  @include medium {
+    background-image: url('/assets/imgs/apacheCover_medium.jpg');
+  }
+
+  @include tall {
+    background-image: url('/assets/imgs/apacheCover_tall.jpg');
+  }
 }
 
 .movieCover__img--raptus {
-  background-image: url('/assets/imgs/raptusCover.jpg');
+  background-image: url('/assets/imgs/raptusCover_small.jpg');
+
+  @include medium {
+    background-image: url('/assets/imgs/raptusCover_medium.jpg');
+  }
+
+  @include tall {
+    background-image: url('/assets/imgs/raptusCover_tall.jpg');
+  }
 }
 
 .movieCover__img--piscine {
-  background-image: url('/assets/imgs/piscineCover.jpg');
+  background-image: url('/assets/imgs/piscineCover_small.jpg');
+
+  @include medium {
+    background-image: url('/assets/imgs/piscineCover_medium.jpg');
+  }
+
+  @include tall {
+    background-image: url('/assets/imgs/piscineCover_tall.jpg');
+  }
 }
 
 .movieCover__img--chienne {
-  background-image: url('/assets/imgs/chienneCover.jpg');
+  background-image: url('/assets/imgs/chienneCover_small.jpg');
+
+  @include medium {
+    background-image: url('/assets/imgs/chienneCover_medium.jpg');
+  }
+
+  @include tall {
+    background-image: url('/assets/imgs/chienneCover_tall.jpg');
+  }
 }
 
 .movieCover__title--extra {

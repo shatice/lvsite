@@ -8,19 +8,59 @@
 }
 
 .movie--desiderare {
-	background-image: url('/assets/imgs/desiderare.png'); 
+	background-image: url('/assets/imgs/desiderare_small.jpg'); 
+
+	@include medium {
+		background-image: url('/assets/imgs/desiderare_medium.jpg'); 
+  }
+
+  @include tall {
+		background-image: url('/assets/imgs/desiderare_tall.jpg'); 
+  }
 }
 .movie--apache {
-	background-image: url('/assets/imgs/apache.png'); 
+	background-image: url('/assets/imgs/apache_small.jpg'); 
+
+	@include medium {
+		background-image: url('/assets/imgs/apache_medium.jpg'); 
+  }
+
+  @include tall {
+		background-image: url('/assets/imgs/apache_tall.jpg'); 
+  }
 }
 .movie--raptus {
-	background-image: url('/assets/imgs/raptus.png'); 
+	background-image: url('/assets/imgs/raptus_small.jpg'); 
+
+	@include medium {
+		background-image: url('/assets/imgs/raptus_medium.jpg'); 
+  }
+
+  @include tall {
+		background-image: url('/assets/imgs/raptus_tall.jpg'); 
+  }
 }
 .movie--piscine {
-	background-image: url('/assets/imgs/piscine.jpg'); 
+	background-image: url('/assets/imgs/piscine_small.jpg'); 
+
+	@include medium {
+		background-image: url('/assets/imgs/piscine_medium.jpg'); 
+  }
+
+  @include tall {
+		background-image: url('/assets/imgs/piscine_tall.jpg'); 
+  }
 }
 .movie--chienne {
-	background-image: url('/assets/imgs/chienne.jpg'); 
+	background-image: url('/assets/imgs/chienne_small.jpg'); 
+
+	@include medium {
+		background-image: url('/assets/imgs/chienne_medium.jpg'); 
+  }
+
+  @include tall {
+		background-image: url('/assets/imgs/chienne_tall.jpg'); 
+  }
 }
 
 .movieTitle {

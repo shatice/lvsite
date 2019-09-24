@@ -8,12 +8,16 @@
 }
 
 body {
-	background-image: url('/assets/imgs/bg.jpg'); 
+	background-image: url('/assets/imgs/bg_small.jpg'); 
 	background-attachment: fixed; 
-
 	font-family: 'Bebas', sans-serif;
 
-	@include tall {
+	@include medium {
+		background-image: url('/assets/imgs/bg_medium.jpg'); 
+  }
+
+  @include tall {
+		background-image: url('/assets/imgs/bg_tall.jpg'); 
 		background-size: cover; 
-	}
+  }
 }

@@ -3,6 +3,10 @@ footer {
 	font-size: 0.8rem; 
 	padding: 20px; 
 	text-align: center; 
+
+	@include medium {
+		color: $third-color; 
+	}
 }
 
 .footer--movies {

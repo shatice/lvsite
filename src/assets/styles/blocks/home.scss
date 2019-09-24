@@ -5,22 +5,101 @@
 	background-size: cover;
 	background-position: center;  
 	@include flex(column, center, center);
+
+	@include medium {
+		height: 55vh;
+		align-items: flex-start; 
+	}
 }
+
+.movie:nth-child(2n) {
+	@include medium {
+		align-items: flex-end; 
+	}
+}
+
+.movieTitle {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 20px;
+	font-size: 3rem; 
+	color: $sec-color; 
+
+	@include medium {
+		color: transparent;
+		-webkit-background-clip: text;
+		background-repeat: no-repeat; 
+		background-size: cover; 
+		background-position: center; 
+		font-size: 6rem; 
+	}
+
+	@include tall {
+		font-size: 16rem; 
+	}
+}
+
+/*********** Modifiers ***********/
 
 .movie--desiderare {
 	background-image: url('/assets/imgs/desiderare_medium.jpg'); 
+
+	.movieTitle {
+		
+		@include medium {
+			background-image: url('/assets/gifs/apache.gif');
+		}
+	}
 }
 .movie--apache {
 	background-image: url('/assets/imgs/apache_medium.jpg'); 
+
+	.movieTitle {
+		
+		@include medium {
+			background-image: url('/assets/gifs/apache.gif');
+		}
+	}
 }
 .movie--raptus {
 	background-image: url('/assets/imgs/raptus_medium.jpg'); 
+
+	.movieTitle {
+		
+		@include medium {
+			background-image: url('/assets/gifs/raptus.gif');
+		}
+	}
 }
 .movie--piscine {
 	background-image: url('/assets/imgs/piscine_medium.jpg'); 
+
+	.movieTitle {
+		
+		@include medium {
+			background-image: url('/assets/gifs/piscine.gif');
+		}
+	}
 }
 .movie--chienne {
 	background-image: url('/assets/imgs/chienne_medium.jpg'); 
+
+	.movieTitle {
+		
+		@include medium {
+			background-image: url('/assets/gifs/chienne.gif');
+		}
+	}
+}
+
+.movie--desiderare,
+.movie--piscine {
+	
+	.movieTitle {
+		@include medium {
+			font-size: 12rem; 
+		}
+	}
 }
 
 .movie--desiderare,
@@ -34,28 +113,7 @@
 	}
 }
 
-.movieTitle {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 20px;
-	font-size: 3rem; 
-	color: $sec-color;  
-
-	@include medium {
-		color: transparent;
-		-webkit-background-clip: text;
-		background-image: url('/assets/imgs/raptus_small.jpg');
-		background-repeat: no-repeat; 
-		background-size: cover; 
-		background-position: center; 
-		font-size: 6rem; 
-	}
-
-	@include tall {
-		font-size: 12rem; 
-	}
-}
-
 .movieTitle.is-clicked {
 	display: none; 
 }
+

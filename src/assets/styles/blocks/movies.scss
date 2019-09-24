@@ -7,6 +7,7 @@
   @include tall {
     width: 60%; 
     margin: 80px auto; 
+    height: 95vh;
   }
 }
 
@@ -34,34 +35,76 @@
 
   @include tall {
     p {
-      font-size: 5rem; 
+      font-size: 6rem; 
+      margin-right: 20px; 
     }
+  }
+}
+
+.movieCover__details {
+  @include tall {
   }
 }
 
 .movieCover__description {
   height: 100%;
   @include flex(column, space-between, center);
+
+  @include tall {
+    height: 60%;
+    align-items: flex-start; 
+  }
 }
 
 .movieCover__type {
   font-size: 1.5rem; 
+
+  @include tall {
+    font-size: 1.8rem; 
+  }
 }
 
 .movieCover__time, 
 .movieCover__date {
-  font-size: 1.8rem;    
+  font-size: 1.5rem;  
+  
+  @include tall {
+    font-size: 2rem; 
+  }
 }
 
 .movieCover__prom {
   display: none; 
+
+  @include tall {
+    @include flex(column, space-between, none);
+    padding: 20px 0; 
+    height: 40%; 
+  }
+}
+
+.movieCover__selection, 
+.movieCover__press {
+  font-size: 1.5rem; 
+
+  h3 {
+    margin-bottom: 10px; 
+  }
+
+  ul {
+    line-height: 1.2; 
+  }
 }
 
 .movieCover__img {
-  width: 70%; 
+  width: 75%; 
   background-size: contain; 
   background-position: center; 
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  
+  @include tall {
+    width: 60%; 
+  }
 }
 
 /*********** MODIFIERS **********/
@@ -111,22 +154,6 @@
   }
 }
 
-.movieCover__title--extra {
-  display: flex; 
-
-  div:first-child {
-    @include flex(column, flex-start, none);
-  }
-  
-  div:nth-child(2) {
-    @include flex(column, flex-end, none);
-  }
-
-  p {
-    font-size: 2.5rem; 
-  }
-}
-
 .movieCover__img--desiderare {
   background-image: url('/assets/imgs/desiderareCover.jpg'); 
 }
@@ -145,4 +172,24 @@
 
 .movieCover__img--chienne {
   background-image: url('/assets/imgs/chienneCover.jpg');
+}
+
+.movieCover__title--extra {
+  display: flex; 
+
+  div:first-child {
+    @include flex(column, flex-start, none);
+  }
+  
+  div:nth-child(2) {
+    @include flex(column, flex-end, none);
+  }
+
+  p {
+    font-size: 2.5rem; 
+
+    @include tall {
+      font-size: 4.5rem; 
+    }
+  }
 }

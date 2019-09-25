@@ -14,6 +14,7 @@ body {
 	background-position: center; 
 	font-family: 'Bebas', sans-serif;
 	transition: all 0.5s; 
+	color: $third-color; 
 
 	@include medium {
 		background-image: url('/assets/imgs/bg_medium.jpg'); 

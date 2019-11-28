@@ -39,3 +39,39 @@ menu.addEventListener('click', function() {
 	});
 }); 
 
+// function openMovie() {
+// 	let movies = document.querySelectorAll('.movie');
+// 	let movieInfos = document.querySelector('.desiderareMovie');
+// 	let back = document.getElementById('back'); 
+// 	let moviesLinks = document.getElementById('moviesLinks'); 
+// 	let body = document.querySelector('body'); 
+
+// 	document.querySelector('.movieTitle p').addEventListener('click', function() {
+// 		console.log('ok'); 
+
+// 		back.classList.add('is-clicked'); 
+// 		movieInfos.classList.add('is-clicked'); 
+// 		moviesLinks.classList.add('is-removed'); 
+// 		body.classList.add('is-hidden');  
+	
+// 		// movies.forEach(movie => {
+// 		// 	movie.style.display = "none"; 
+// 		// });
+// 	})
+	
+// 	back.addEventListener('click', function() {
+// 		console.log('back'); 
+// 		back.classList.remove('is-clicked'); 
+// 		movieInfos.classList.remove('is-clicked'); 
+// 		moviesLinks.classList.remove('is-removed'); 
+// 		body.classList.remove('is-hidden'); 
+
+// 		// movies.forEach(movie => {
+// 		// 	movie.style.display = "flex"; 
+// 		// });
+	
+// 	})
+// }
+
+// openMovie(); 
+

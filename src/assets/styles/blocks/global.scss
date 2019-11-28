@@ -15,6 +15,7 @@ body {
 	font-family: 'Bebas', sans-serif;
 	transition: all 0.5s; 
 	color: $third-color; 
+	overflow-x: hidden;
 
 	@include medium {
 		background-image: url('/assets/imgs/bg_medium.jpg'); 
@@ -26,7 +27,7 @@ body {
 }
 
 body.is-changed-desiderare {
-	background-image: url('/assets/gifs/apache.gif'); 
+	background-image: url('/assets/gifs/desiderare.gif'); 
 }
 body.is-changed-apache {
 	background-image: url('/assets/gifs/apache.gif'); 

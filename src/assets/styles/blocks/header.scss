@@ -161,10 +161,12 @@ header {
 	}
 }
 
-header.is-changed {
-	h1,
-	.navItem {
-		@include textClip;	
-		background-image: url('/assets/imgs/bg_small.jpg'); 
+@include tall {
+	header.is-changed {
+		h1,
+		.navItem {
+			@include textClip;	
+			background-image: url('/assets/imgs/bg_small.jpg'); 
+		}
 	}
 }

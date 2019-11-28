@@ -114,7 +114,11 @@
 	display: none; 
 }
 
-.movieTitle.is-changed {
-	background-image: url('/assets/imgs/bg_small.jpg'); 
+@include tall {
+	.movieTitle.is-changed {
+		background-image: url('/assets/imgs/bg_small.jpg'); 
+	}
 }
+
+
 

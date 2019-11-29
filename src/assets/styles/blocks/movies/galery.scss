@@ -5,3 +5,14 @@
     width: 100%;
   }
 }
+
+@include tall {
+  .galery {
+    margin-top: 10rem;
+
+    ul {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+}

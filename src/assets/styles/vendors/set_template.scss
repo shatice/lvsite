@@ -38,68 +38,78 @@ body {
 }
 
 .movieCover__infos--desiderare,
-.movieCover__prom--desiderare, 
-.btnMovie--desiderare {
+.movieCover__prom--desiderare {
 
   .movieCover__title, 
   .movieCover__time,
   .movieCover__date,
-  h3,
-  a {
+  h3 {
     color: $desiderare-color;
   }
 }
 
+.btnMovie--desiderare a {
+  color: $desiderare-color;
+}
+
 .movieCover__infos--apache,
-.movieCover__prom--apache, 
-.btnMovie--apache {
+.movieCover__prom--apache {
 
   .movieCover__title, 
   .movieCover__time,
   .movieCover__date, 
-  h3,
-  a {
+  h3 {
     color: $apache-color;
   }
 }
 
+.btnMovie--apache a {
+  color: $apache-color;
+}
+
 .movieCover__infos--raptus,
-.movieCover__prom--raptus, 
-.btnMovie--raptus {
+.movieCover__prom--raptus {
 
   .movieCover__title, 
   .movieCover__time,
   .movieCover__date,
-  h3,
-  a {
+  h3 {
     color: $raptus-color;
   }
 }
 
+.btnMovie--raptus a {
+  color: $raptus-color;
+}
+
 .movieCover__infos--piscine,
-.movieCover__prom--piscine, 
-.btnMovie--piscine {
+.movieCover__prom--piscine {
 
   .movieCover__title, 
   .movieCover__time,
   .movieCover__date,
-  h3,
-  a {
+  h3 {
     color: $piscine-color;
   }
 }
 
+.btnMovie--piscine a {
+  color: $piscine-color;
+}
+
 .movieCover__infos--chienne,
-.movieCover__prom--chienne, 
-.btnMovie--chienne {
+.movieCover__prom--chienne {
 
   .movieCover__title, 
   .movieCover__time,
   .movieCover__date,
-  h3,
-  a {
+  h3 {
     color: $chienne-color;
   }
+}
+
+.btnMovie--chienne a {
+  color: $chienne-color;
 }
 
 .movieCover__img--desiderare {

@@ -4,7 +4,7 @@
 
   .movieCover {
     width: 60%; 
-    margin: 80px auto; 
+    margin: 2rem auto; 
     height: 85vh;
   }
 
@@ -13,9 +13,10 @@
   // TITLE
 
   .movieCover__title {
+    margin-right: 1.25rem;
+
     p {
-      font-size: 6rem; 
-      margin-right: 20px; 
+      font-size: 6rem;
     }
   }
 
@@ -23,36 +24,27 @@
     font-size: 4.5rem; 
   }
 
-  // DETAILS
-
-  .movieCover__details--desiderare {
-    .movieCover__description {
-      height: 75%;
-    }
-  
-    .movieCover__prom {
-      display: flex;
-      height: unset;
-    }
+  .movieCover__title--desiderare p {
+    font-size: 4rem;
   }
+
+  // DETAILS
 
   .movieCover__description {
     height: 60%;
-    padding-top: .5rem;
     align-items: flex-start; 
-  }
 
-  .movieCover__type {
-    font-size: 1.8rem; 
-  }
-  .movieCover__time, 
-  .movieCover__date {
-    font-size: 2rem; 
+    .movieCover__type {
+      font-size: 1.8rem; 
+    }
+    .movieCover__time, 
+    .movieCover__date {
+      font-size: 2rem; 
+    }
   }
 
   .movieCover__prom {
     @include flex(column, space-between, none);
-    padding: 20px 0; 
     height: 40%; 
   
     &.desktop {
@@ -66,6 +58,21 @@
 
     &.mobile {
       display: none;
+    }
+  }
+
+  // Mofifiers
+
+  .movieCover__details--desiderare {
+    @include flex(column, space-between, unset);
+
+    .movieCover__description {
+      height: 75%;
+    }
+  
+    .movieCover__prom {
+      display: flex;
+      height: unset;
     }
   }
 

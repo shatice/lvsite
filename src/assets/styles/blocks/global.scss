@@ -7,39 +7,6 @@
 	}
 }
 
-body {
-	background-image: url('/assets/imgs/bg_small.jpg'); 
-	background-attachment: fixed; 
-	background-size: cover; 
-	background-position: center; 
-	font-family: 'Bebas', sans-serif;
-	transition: all 0.5s; 
-	color: $third-color; 
-	overflow-x: hidden;
-
-	@include medium {
-		background-image: url('/assets/imgs/bg_medium.jpg'); 
-  }
-
-  @include tall {
-		background-image: url('/assets/imgs/bg_tall.jpg'); 
-  }
-}
-
-@include tall {
-	body.is-changed-desiderare {
-		background-image: url('/assets/gifs/desiderare.gif'); 
-	}
-	body.is-changed-apache {
-		background-image: url('/assets/gifs/apache.gif'); 
-	}
-	body.is-changed-raptus {
-		background-image: url('/assets/gifs/raptus.gif'); 
-	}
-	body.is-changed-piscine {
-		background-image: url('/assets/gifs/piscine.gif'); 
-	}
-	body.is-changed-chienne {
-		background-image: url('/assets/gifs/chienne.gif'); 
-	}
-}
+// main {
+//   margin-bottom: 2rem;
+// }

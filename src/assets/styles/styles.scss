@@ -2,9 +2,13 @@
 @import './vendors/fonts.scss'; 
 @import './vendors/vars.scss'; 
 @import './vendors/mixins.scss'; 
+@import './vendors/set_template.scss'; 
 
 @import './blocks/global.scss';
 @import './blocks/header.scss';
 @import './blocks/footer.scss';
 @import './blocks/home.scss'; 
-@import './blocks/movies.scss';
+
+@import './blocks/movies/movies_mobile.scss';
+@import './blocks/movies/movies_desktop.scss';
+@import './blocks/movies/galery.scss';

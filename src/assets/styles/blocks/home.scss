@@ -6,14 +6,14 @@
 	background-position: center;  
 	@include flex(column, center, center);
 
-	@include medium {
+	@include tall {
 		height: 55vh;
 		align-items: flex-start; 
 	}
 }
 
 .movie:nth-child(2n) {
-	@include medium {
+	@include tall {
 		align-items: flex-end; 
 	}
 }
@@ -26,12 +26,12 @@
 	color: $sec-color; 
 	transition: all 0.5s; 
 
-	@include medium {
-		@include textClip;	
+	@include tall {	
 		font-size: 6rem; 
 	}
 
 	@include tall {
+		@include textClip;
 		font-size: 16rem; 
 	}
 }
@@ -43,7 +43,7 @@
 
 	.movieTitle {
 		
-		@include medium {
+		@include tall {
 			background-image: url('/assets/gifs/desiderare.gif');
 		}
 	}
@@ -53,7 +53,7 @@
 
 	.movieTitle {
 		
-		@include medium {
+		@include tall {
 			background-image: url('/assets/gifs/apache.gif');
 		}
 	}
@@ -63,7 +63,7 @@
 
 	.movieTitle {
 		
-		@include medium {
+		@include tall {
 			background-image: url('/assets/gifs/raptus.gif');
 		}
 	}
@@ -73,7 +73,7 @@
 
 	.movieTitle {
 		
-		@include medium {
+		@include tall {
 			background-image: url('/assets/gifs/piscine.gif');
 		}
 	}
@@ -83,7 +83,7 @@
 
 	.movieTitle {
 		
-		@include medium {
+		@include tall {
 			background-image: url('/assets/gifs/chienne.gif');
 		}
 	}
@@ -93,7 +93,7 @@
 .movie--piscine {
 	
 	.movieTitle {
-		@include medium {
+		@include tall {
 			font-size: 12rem; 
 		}
 	}
@@ -105,7 +105,7 @@
 .movie--piscine,
 .movie--chienne {
 
-	@include medium {
+	@include tall {
 		background-image: none; 
 	}
 }

@@ -1,0 +1,163 @@
+body {
+  font-family: $primary-font;
+  color: $third-color;
+
+	background-image: url('/assets/imgs/bg_small.jpg'); 
+	background-attachment: fixed; 
+	background-size: cover; 
+  background-position: center; 
+  
+	transition: all 0.5s;  
+	overflow-x: hidden;
+
+	@include tall {
+		background-image: url('/assets/imgs/bg_tall.jpg'); 
+  }
+
+  @include tall {
+		background-image: url('/assets/imgs/bg_tall.jpg'); 
+  }
+}
+
+@include tall {
+	body.is-changed-desiderare {
+		background-image: url('/assets/gifs/desiderare.gif'); 
+	}
+	body.is-changed-apache {
+		background-image: url('/assets/gifs/apache.gif'); 
+	}
+	body.is-changed-raptus {
+		background-image: url('/assets/gifs/raptus.gif'); 
+	}
+	body.is-changed-piscine {
+		background-image: url('/assets/gifs/piscine.gif'); 
+	}
+	body.is-changed-chienne {
+		background-image: url('/assets/gifs/chienne.gif'); 
+	}
+}
+
+.movieCover__infos--desiderare,
+.movieCover__prom--desiderare, 
+.btnMovie--desiderare {
+
+  .movieCover__title, 
+  .movieCover__time,
+  .movieCover__date,
+  h3,
+  a {
+    color: $desiderare-color;
+  }
+}
+
+.movieCover__infos--apache,
+.movieCover__prom--apache, 
+.btnMovie--apache {
+
+  .movieCover__title, 
+  .movieCover__time,
+  .movieCover__date, 
+  h3,
+  a {
+    color: $apache-color;
+  }
+}
+
+.movieCover__infos--raptus,
+.movieCover__prom--raptus, 
+.btnMovie--raptus {
+
+  .movieCover__title, 
+  .movieCover__time,
+  .movieCover__date,
+  h3,
+  a {
+    color: $raptus-color;
+  }
+}
+
+.movieCover__infos--piscine,
+.movieCover__prom--piscine, 
+.btnMovie--piscine {
+
+  .movieCover__title, 
+  .movieCover__time,
+  .movieCover__date,
+  h3,
+  a {
+    color: $piscine-color;
+  }
+}
+
+.movieCover__infos--chienne,
+.movieCover__prom--chienne, 
+.btnMovie--chienne {
+
+  .movieCover__title, 
+  .movieCover__time,
+  .movieCover__date,
+  h3,
+  a {
+    color: $chienne-color;
+  }
+}
+
+.movieCover__img--desiderare {
+  background-image: url('/assets/imgs/desiderareCover_small.jpg'); 
+
+  @include tall {
+    background-image: url('/assets/imgs/desiderareCover_tall.jpg'); 
+  }
+
+  @include tall {
+    background-image: url('/assets/imgs/desiderareCover_tall.jpg'); 
+  }
+}
+
+.movieCover__img--apache {
+  background-image: url('/assets/imgs/apacheCover_small.jpg');
+
+  @include tall {
+    background-image: url('/assets/imgs/apacheCover_tall.jpg');
+  }
+
+  @include tall {
+    background-image: url('/assets/imgs/apacheCover_tall.jpg');
+  }
+}
+
+.movieCover__img--raptus {
+  background-image: url('/assets/imgs/raptusCover_small.jpg');
+
+  @include tall {
+    background-image: url('/assets/imgs/raptusCover_tall.jpg');
+  }
+
+  @include tall {
+    background-image: url('/assets/imgs/raptusCover_tall.jpg');
+  }
+}
+
+.movieCover__img--piscine {
+  background-image: url('/assets/imgs/piscineCover_small.jpg');
+
+  @include tall {
+    background-image: url('/assets/imgs/piscineCover_tall.jpg');
+  }
+
+  @include tall {
+    background-image: url('/assets/imgs/piscineCover_tall.jpg');
+  }
+}
+
+.movieCover__img--chienne {
+  background-image: url('/assets/imgs/chienneCover_small.jpg');
+
+  @include tall {
+    background-image: url('/assets/imgs/chienneCover_tall.jpg');
+  }
+
+  @include tall {
+    background-image: url('/assets/imgs/chienneCover_tall.jpg');
+  }
+}

@@ -1,0 +1,132 @@
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}
+
+/***** CONTAINER *****/
+
+.movieCover {
+  width: 100%; 
+  height: 80vh;
+  @include flex(row, space-between, none);
+  margin: 2rem auto; 
+  padding: 0 .5rem;
+}
+
+/***** TEXT *****/
+
+.movieCover__infos {
+  height: 100%;
+  display: flex;
+}
+
+// TITLE
+
+.movieCover__title {
+  height: 100%;
+
+  div {
+    height: 100%;
+    @include flex(column, space-between, none);
+  }
+
+  p {
+    text-align: center; 
+    font-size: 3.9rem; 
+  }
+}
+
+.movieCover__title--extra {
+  display: flex; 
+
+  div:first-child {
+    @include flex(column, flex-start, none);
+  }
+  
+  div:nth-child(2) {
+    @include flex(column, flex-end, none);
+  }
+
+  p {
+    font-size: 2.5rem; 
+  }
+}
+
+.movieCover__title--desiderare {
+  p {
+    font-size: 2.8rem;
+  }
+}
+
+// DETAILS
+
+.movieCover__description {
+  height: 100%;
+  padding-left: .5rem;
+  @include flex(column, space-between, center);
+}
+
+.movieCover__type {
+  font-size: 1.5rem; 
+}
+
+.movieCover__time, 
+.movieCover__date {
+  font-size: 1.5rem;
+}
+
+.movieCover__prom {
+  padding: 5px; 
+  text-align: center;
+
+  &.desktop {
+    display: none;
+  }
+
+  h3 {
+    margin-bottom: 1rem; 
+    font-size: 1.2rem; 
+  }
+}
+
+.movieCover__selection, 
+.movieCover__press {
+  margin-bottom: 2rem;
+
+  p {
+    line-height: 1.5;
+  }
+  
+
+  ul {
+    line-height: 1.2; 
+  }
+}
+
+/***** IMAGE *****/
+
+.movieCover__img {
+  width: 80%; 
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  transition: all 0.5s; 
+}
+
+/***** BTN *****/
+
+.btnMovie {
+  border: none;
+  width: 100%;
+  background: none;
+  margin: 2rem 0;
+
+  a {
+    font-family: $primary-font; 
+    font-size: 1.5rem;
+  }
+}
+
+
+

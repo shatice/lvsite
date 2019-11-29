@@ -18,7 +18,7 @@ main {
   @include tall {
     width: 60%; 
     margin: 80px auto; 
-    height: 95vh;
+    height: 85vh;
   }
 }
 
@@ -64,6 +64,7 @@ main {
 
   @include tall {
     height: 60%;
+    padding-top: .5rem;
     align-items: flex-start; 
   }
 }
@@ -323,8 +324,8 @@ main {
   opacity: 0;
 
   // background-image: url('/assets/imgs/bg_small.jpg'); 
-	// background-attachment: fixed; 
-	// background-size: cover; 
+  // background-attachment: fixed; 
+  // background-size: cover; 
   // background-position: center; 
   
   &.is-clicked {
@@ -374,3 +375,39 @@ body {
     font-size: 2.8rem;
   }
 }
+
+.movieCover__prom.desktop {
+  display: none;
+}
+
+.movieCover__details--desiderare {
+  @include tall {
+    .movieCover__description {
+      height: 75%;
+    }
+  
+    .movieCover__prom {
+      display: flex;
+      height: unset;
+    }
+  }  
+}
+
+@include tall {
+  .mobile {
+    display: none;
+  }
+
+  .movieCover__prom.desktop {
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    .movieCover__press {
+      margin-bottom: unset;
+    }
+  }
+}
+
+
+

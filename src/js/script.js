@@ -1,4 +1,5 @@
 console.log('The fish knows'); 
+console.log('And its the right url'); 
 
 /*********** Home **********/
 

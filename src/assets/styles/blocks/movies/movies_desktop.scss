@@ -20,8 +20,14 @@
     }
   }
 
-  .movieCover__title--extra p {
-    font-size: 4.5rem; 
+  .movieCover__title--extra {
+    div:first-child {
+      margin-right: 1rem;
+    }
+
+    p {
+      font-size: 3.8rem; 
+    }
   }
 
   .movieCover__title--desiderare p {

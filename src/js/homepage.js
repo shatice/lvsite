@@ -47,7 +47,9 @@ function hpMarkUp() {
     `;
   
     homeSection.innerHTML += hpMarkUp;
-  });
+	});
+	
+
 }
 
-hpMarkUp(); 
+hpMarkUp();

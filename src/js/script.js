@@ -1,7 +1,6 @@
 console.log('The fish knows'); 
-console.log('And its the right url'); 
 
-/*********** Home **********/
+/*********** HOME BGS **********/
 
 function homeEffects() {
 
@@ -19,10 +18,15 @@ function homeEffects() {
 
 	movieTitles.forEach(movieTitle => {
 		movieTitle.addEventListener('mouseover', function() {
-			console.log('OOOK'); 
 			el = movieTitle;
 			toggleBg();
 		})
+
+		movieTitle.addEventListener('click', function() {
+			localStorage.setItem('movieId', movieTitle.id); 
+			console.log(localStorage); 
+		})
+
 		movieTitle.addEventListener('mouseout', function() {
 			toggleBg();
 		})
@@ -31,5 +35,6 @@ function homeEffects() {
 }
 
 homeEffects(); 
+
 
 

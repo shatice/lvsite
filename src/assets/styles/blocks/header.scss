@@ -18,106 +18,6 @@ header {
 			font-size: 2rem;
 		}
 	}
-
-	.nav, 
-	.menu {
-		display: none;
-	}
-
-	.nav {
-		display: none; 
-		transition: all 0.5s; 
-
-		@include tall {
-			display: block; 
-			@include flex(row, space-between, none); 
-			display: none;
-		}
-	}
-
-	.navItem {
-		display: none; 
-		font-size: 2rem; 
-		line-height: 1.5; 
-		color: $sec-color; 
-		// color: transparent;
-		// -webkit-background-clip: text;
-		// background-image: url('../assets/imgs/bg.jpg');
-
-		@include tall {
-			display: block; 
-			font-size: 1.2rem;
-			padding-left: 20px; 
-			color: $fav-color; 
-			color: $third-color; 
-			cursor: pointer;
-		}
-	}
-
-	.menu {
-		width: 25px; 
-		height: 3px;
-		background: $fav-color; 
-		position: fixed;
-		top: 25px; 
-		right: 5px; 
-		z-index: 2; 
-		transition: all 0.5s; 
-
-		@include tall {
-			display: none; 
-		}
-
-		&::before, 
-		&::after {
-			content: "";             
-			position: absolute; 
-			background: $fav-color; 
-			height: 3px;
-			right: 0; 
-			transition: all 0.5s;
-
-			@include tall {
-				display: none; 
-			}
-		}
-
-		&::before {
-			width: 35px; 
-			top: -10px; 
-		}
-
-		&::after {
-			width: 15px; 
-			top: 10px; 
-		}
-	}
-
-	.menu.is-clicked {
-		background: $sec-color; 
-		// background-image: url('../assets/imgs/bg.jpg');
-
-		&::before, &::after {
-			background: $sec-color; 
-			// background-image: url('../assets/imgs/bg.jpg');
-		}
-	}
-
-	.nav.is-clicked {
-		display: block; 
-		animation: appear 0.2s linear forwards; 
-		@include flex(column, center, center); 
-		background: rgba(195, 58, 40, 0.397); 
-		width: 100vw; 
-		height: 100vh;
-		position: fixed;
-		top: 0; 
-		left: 0;
-
-		.navItem {
-			display: block; 
-		}
-	}
 }
 
 .header--movies {
@@ -131,42 +31,11 @@ header {
 			left: 15px; 
 		}
 	}
-
-	.nav {
-
-		@include tall {
-			position: fixed; 
-			top: 20px; 
-			right: 15px; 
-		}
-	}
-
-	.navItem {
-
-		@include tall {
-			color: $third-color; 
-		}
-	}	
-
-	.navItem:first-child {
-		@include tall {
-			display: none; 
-		}
-	}
-
-	.menu {
-		background: $third-color; 
-		
-		&::before, &::after {
-			background: $third-color; 
-		}
-	}
 }
 
 @include tall {
 	header.is-changed {
-		h1,
-		.navItem {
+		h1 {
 			@include textClip;	
 			background-image: url('/assets/imgs/bg_small.jpg'); 
 		}
